@@ -592,5 +592,115 @@
         </div>
       </div>
     </footer>
+    <!-- Контейнер для модального вікна -->
+    <div class="modal-container">
+      <!-- Модальне вікно -->
+      <div class="modal">
+        <button class="modal-button" type="button">
+          <svg class="icon-form-closed">
+            <use href="./images/your-icon.svg#icon-id"></use>
+          </svg>
+          Закрити
+        </button>
+        <!-- Параграф всередині модального вікна -->
+        <p class="modal-paragraph">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <!-- Дів для розташування формових елементів -->
+          <div class="form-group">
+            <!-- Label для input з текстовим контентом Name -->
+            <label class="form-label" for="user-name">Name</label>
+            <!-- Input для введення імені -->
+            <div class="input-container">
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="form-input"
+                placeholder="Enter your name"
+              />
+              <!-- SVG іконка -->
+              <svg class="icon-form-input" width="18" height="24">
+                <use href="./images/your-icon.svg#icon-id"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Другий div форми -->
+          <div class="form-group">
+            <!-- Label для input -->
+            <label class="form-label" for="user-phone">Phone</label>
+            <!-- Div для контейнера input та іконки -->
+            <div class="input-container">
+              <!-- Input для телефону -->
+              <input
+                id="user-phone"
+                name="user-phone"
+                type="text"
+                class="form-input"
+                placeholder="Enter your phone"
+              />
+              <!-- SVG іконка -->
+              <svg class="icon-form-input" width="18" height="24">
+                <use href="./images/your-icon.svg#icon-id"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Третій div форми -->
+          <div class="form-group">
+            <!-- Label для input -->
+            <label class="form-label" for="user-email">Email</label>
+            <!-- Div для контейнера input та іконки -->
+            <div class="input-container">
+              <!-- Input для електронної пошти -->
+              <input
+                id="user-email"
+                name="user-email"
+                type="email"
+                class="form-input"
+                placeholder="Enter your email"
+              />
+              <!-- SVG іконка -->
+              <svg class="icon-form-input" width="18" height="24">
+                <use href="./images/your-icon.svg#icon-id"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Четвертий div форми -->
+          <div class="form-group">
+            <!-- Label для textarea -->
+            <label class="form-label" for="user-comment">Comment</label>
+            <!-- Textarea для коментаря -->
+            <div class="textarea-container">
+              <textarea
+                id="user-comment"
+                name="user-comment"
+                class="form-textarea"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <!-- П'ятий div форми для чекбоксу -->
+          <div class="form-container">
+            <input
+              id="user-privacy"
+              class="input-checkbox visually-hidden"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+            />
+            <label for="user-privacy" class="label-text"
+              >I accept the terms and conditions of the
+              <span class="icon-container"
+                ><svg class="icon-svg" width="10" height="8">...</svg></span
+              >
+              <a href="#" class="privacy-policy-link">Privacy Policy</a></label
+            >
+          </div>
+
+          <button class="button">Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
