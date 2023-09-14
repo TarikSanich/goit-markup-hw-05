@@ -619,6 +619,81 @@ body {
     display: inline-block;
     margin-bottom: 16px;
 }
+
+/* Стилі для контейнера форми */
+.container-form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    /* Змініть на бажаний колір фону */
+    height: 200px;
+    /* Змініть на бажану висоту */
+}
+
+/* Стилі для параграфа */
+.form-paragraph {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    /* Змініть на бажаний колір тексту */
+}
+
+/* Стилі для форми */
+.my-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Стилі для інпуту */
+.my-form input[type="email"] {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    /* Змініть на бажаний колір межі */
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+    /* Змініть на бажаний колір тексту */
+}
+
+/* Стилі для кнопки */
+.my-form button[type="submit"] {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    /* Змініть на вибране сімейство шрифту */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    /* Змініть на бажаний колір тексту в кнопці */
+    cursor: pointer;
+    background-color: #4D5AE5;
+    /* Змініть на бажаний колір фону */
+    border: none;
+    border-radius: 4px;
+}
+
+/* Стилі для SVG */
+.my-form svg {
+    margin-left: 16px;
+}
+
+
 /* Стилі для контейнера модального вікна */
 .modal-container {
     position: fixed;
