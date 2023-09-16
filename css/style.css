@@ -753,7 +753,7 @@ body {
 }
 
 /* Оновлені стилі для кнопки */
-.modal-button {
+.modal-button-closed {
     position: absolute;
     top: 24px;
     right: 24px;
