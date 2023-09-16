@@ -593,15 +593,22 @@
         <div class="container-form-footer">
           <p class="form-paragraph">Subscribe</p>
           <form class="my-form-footer">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
-            <button type="submit">Subscribe</button>
+            <label class="email-label" for="email">
+              <input
+                class="input-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="button-email" type="submit">
+              Subscribe
+              <svg width="24" height="24" class="my-svg">
+                <use href="./images/my-sprite.svg#icon-name"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
