@@ -727,12 +727,12 @@ body {
 }
 
 /* Змінюємо стиль іконки при ховері на кнопку */
-.modal-button:hover .icon {
+.modal-button-closed:hover .icon-form-closed{
     fill: #ffffff;
 }
 
 /* Змінюємо стиль іконки при фокусі на кнопку */
-.modal-button:focus .icon {
+.modal-button-closed:focus .icon-form-closed{
     fill: #ffffff;
 }
 
