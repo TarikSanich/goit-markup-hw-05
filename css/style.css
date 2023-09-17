@@ -623,10 +623,11 @@ body {
 /* Стилі для контейнера форми */
 .container-form-footer {
     /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+   /* justify-content: center;
+    align-items: center;  */
     background-color: #333;
     height: 200px;
+    margin-left: 80px;
 }
 
 /* Стилі для параграфа */
