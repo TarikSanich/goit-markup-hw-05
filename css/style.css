@@ -705,6 +705,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* visibility: hidden */
 }
 
 /* Стилі для модального вікна */
@@ -727,22 +728,22 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо стиль іконки при ховері на кнопку */
+
 .modal-button-closed:hover .icon-form-closed{
     fill: #ffffff;
 }
 
-/* Змінюємо стиль іконки при фокусі на кнопку */
+
 .modal-button-closed:focus .icon-form-closed{
     fill: #ffffff;
 }
 
-/* Стилі для модального вікна */
+
 .modal {
     padding: 72px 24px 24px 24px;
 }
 
-/* Стилі для параграфа всередині модального вікна */
+
 .modal-paragraph {
     font-weight: 500;
     font-size: 16px;
@@ -753,7 +754,7 @@ body {
     margin-bottom: 16px;
 }
 
-/* Оновлені стилі для кнопки */
+
 .modal-button-closed {
     position: absolute;
     top: 24px;
@@ -771,24 +772,24 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо колір фону кнопки при наведенні */
-.modal-button:hover {
+
+.modal-button-closed:hover {
     background-color: #404bbf;
     border: none;
 }
 
-/* Змінюємо колір фону кнопки при фокусі */
-.modal-button:focus {
+
+.modal-button-closed:focus {
     background-color: #404bbf;
     border: none;
 }
 
-/* Стилі для div внутрішнього контейнера форми */
+
 .form-group {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
-/* Стилі для label у формі */
+
 .form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -798,12 +799,12 @@ body {
     margin-bottom: 4px;
 }
 
-/* Стилі для div контейнера input та іконки */
+
 .input-container {
     position: relative;
 }
 
-/* Стилі для input */
+
 .form-input {
     width: 100%;
     height: 40px;
@@ -815,7 +816,7 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо колір рамки при фокусі на input */
+
 .form-input:focus {
     border-color: #4D5AE5;
 }
@@ -837,7 +838,11 @@ body {
         
 }
 
-/* Стилі для svg */
+.form-textarea:focus {
+    border-color: #4D5AE5;
+}
+
+
 .icon-form {
     position: absolute;
     left: 16px;
@@ -846,12 +851,12 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо колір іконки при фокусі на input */
+
 .form-input:focus+.input-container .icon-form {
     fill: #4D5AE5;
 }
 
-/* Стилі для svg */
+
 .icon-form-input {
     position: absolute;
     left: 16px;
@@ -861,8 +866,21 @@ body {
 }
 
 /* Змінюємо колір іконки чекбоксу при зміні стану чекбоксу */
-.checkbox-container input:checked+.checkbox-label .checkbox-icon .icon-form-input {
+/* .checkbox-container input:checked+.checkbox-label .checkbox-icon .icon-form-input {
     fill: #F4F4FD;
+} */
+
+/* Застосовується, коли input у стані checked */
+.input-checkbox:checked+.label-text .icon-container {
+    background-color: #404bbf;
+    /* Задайте вашу css-змінну або конкретний колір */
+    border: none;
+}
+
+/* Застосовується, коли input у стані checked */
+.input-checkbox:checked+.label-text .icon-container svg {
+    fill: #f4f4fd;
+    /* Задайте вашу css-змінну або конкретний колір */
 }
 
 /* Стилі для div контейнера */
@@ -896,18 +914,18 @@ body {
     fill: transparent;
 }
 
-/* Стилі для svg іконки */
+
 .icon-svg {
-    /* Ваші стилі для svg іконки */
+   
 }
 
-/* Стилі для посилання "Privacy Policy" */
+
 .privacy-policy-link {
     color: #4d5ae5;
 }
 
-/* Стилі для кнопки */
-.button {
+
+.button-modal-submit {
     display: block;
     min-width: 169px;
     height: 56px;
@@ -921,10 +939,12 @@ body {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо колір фону кнопки при наведенні */
-.button:hover {
+
+.button-modal-submit:hover {
     background-color: #3a48cc;
 }
