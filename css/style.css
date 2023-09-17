@@ -620,7 +620,7 @@ body {
     margin-bottom: 16px;
 }
 
-/* Стилі для контейнера форми */
+
 .container-form-footer {
     /* display: flex; */
    /* justify-content: center;
@@ -630,7 +630,7 @@ body {
     margin-left: 80px;
 }
 
-/* Стилі для параграфа */
+
 .form-paragraph {
     margin-bottom: 16px;
     font-weight: 500;
@@ -640,14 +640,14 @@ body {
     color: #ffffff;
 }
 
-/* Стилі для форми */
+
 .my-form-footer {
     display: flex;
     /* flex-direction: column; */
     gap: 24px;
 }
 
-/* Стилі для інпуту */
+
 .input-email[type="email"] {
     width: 264px;
     height: 40px;
@@ -666,7 +666,7 @@ body {
     color: #ffffff;
 }
 
-/* Стилі для кнопки */
+
 .button-email {
     min-width: 165px;
     height: 40px;
@@ -685,15 +685,15 @@ body {
     border-radius: 4px;
 }
 
-/* .email-svg {
+.email-svg {
     width: 24px;
     height: 24px;
     margin-left: 16px;
     fill: #ffffff;
-} */
+}
 
 
-/* Стилі для контейнера модального вікна */
+
 .modal-container {
     position: fixed;
     top: 0;
@@ -708,7 +708,7 @@ body {
     /* visibility: hidden */
 }
 
-/* Стилі для модального вікна */
+
 .modal {
     position: absolute;
     top: 50%;
@@ -786,7 +786,6 @@ body {
 
 
 .form-group {
-    margin-bottom: 16px;
     margin-bottom: 8px;
 }
 
@@ -816,9 +815,11 @@ body {
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus .icon-form-input{
+.form-input:focus+ .icon-form-input{
     fill: #4d5ae5;
 }
+
+
 
 
 .form-input:focus {
@@ -869,22 +870,22 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Змінюємо колір іконки чекбоксу при зміні стану чекбоксу */
-/* .checkbox-container input:checked+.checkbox-label .checkbox-icon .icon-form-input {
-    fill: #F4F4FD;
-} */
 
-/* Застосовується, коли input у стані checked */
-.input-checkbox:checked+.label-text .icon-container {
+.checkbox-container input:checked+.checkbox-label .icon-svg{
+    fill: #F4F4FD;
+}
+
+
+.input-checkbox:checked+.label-text .icon-svg {
     background-color: #404bbf;
-    /* Задайте вашу css-змінну або конкретний колір */
+ 
     border: none;
 }
 
-/* Застосовується, коли input у стані checked */
-.input-checkbox:checked+.label-text .icon-container svg {
+
+.input-checkbox:checked+.label-text .icon-svg{
     fill: #f4f4fd;
-    /* Задайте вашу css-змінну або конкретний колір */
+
 }
 
 /* Стилі для div контейнера */
