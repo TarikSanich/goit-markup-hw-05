@@ -787,6 +787,7 @@ body {
 
 .form-group {
     margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 
@@ -814,6 +815,9 @@ body {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus .icon-form-input{
+    fill: #4d5ae5;
 }
 
 
