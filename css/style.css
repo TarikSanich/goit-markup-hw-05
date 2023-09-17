@@ -826,6 +826,10 @@ body {
     border-color: #4D5AE5;
 }
 
+.form-comment{
+    margin-bottom: 16px;
+}
+
 .form-textarea {
             width: 100%;
             height: 120px;
@@ -888,17 +892,48 @@ body {
 
 }
 
-/* Стилі для div контейнера */
+
 .form-container {
     margin-bottom: 24px;
 }
 
-/* Стилі для input чекбоксу */
+
 .input-checkbox {
-    /* Ваші стилі для input чекбоксу */
+   
 }
 
-/* Стилі для label */
+.input-checkbox:focus+
+.label-text>
+.icon-container {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.input-checkbox:checked+
+.label-text>
+.icon-container {
+    background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none;
+}
+
+.input-checkbox:focus+
+.label-text>
+.icon-container {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.input-checkbox:checked+
+.label-text>
+.icon-container {
+    background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none;
+}
+
+
+
+
+
 .label-text {
     font-size: 12px;
     line-height: 1.17;
@@ -906,7 +941,7 @@ body {
     color: #8e8f99;
 }
 
-/* Стилі для span з іконкою */
+
 .icon-container {
     width: 16px;
     height: 16px;
